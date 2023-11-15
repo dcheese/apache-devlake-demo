@@ -6,6 +6,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - run: echo "testing deploy"
+      - exit 1
   push-image:
     runs-on: ubuntu-latest
     steps:
