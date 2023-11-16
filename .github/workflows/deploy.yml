@@ -1,5 +1,13 @@
 name: deploy
 run-name: deploy
+on:
+   workflow_dispatch:
+     inputs:
+       logLevel:
+         required: false
+         description: 'Log Level'
+         default: 'warning'
+
 on: [push]
 jobs:
   deploy:
